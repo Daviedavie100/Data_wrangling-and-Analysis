@@ -2,6 +2,15 @@
 
 The object of this project is to wrangle WeRateDogs Twitter data to create interesting and trustworthy analyses and visualizations. The Twitter archive only contains very basic tweet information, and additional gathering, then assessing and cleaning is required for a worthy analyses and visualizations.
 
+## What Software Do I Need?
+
+- pandas
+- NumPy
+- requests
+- tweepy
+- json
+- matplotlib
+
 ## Project Steps Overview
 
 - Step 1: Gathering data
@@ -11,36 +20,21 @@ The object of this project is to wrangle WeRateDogs Twitter data to create inter
 - Step 5: Analyzing, and visualizing data
 - Step 6: Reporting
 
-## What Software Do I Need?
+## The Data
 
-The entirety of this project can be completed inside the Udacity classroom on the Project Workspace: Complete and Submit Project page using the Jupyter Notebook provided there. (Note: This Project Workspace may not be available in all versions of this project, in which case you should follow the directions below.)
-
-If you want to work outside of the Udacity classroom, the following software requirements apply:
-
-You need to be able to work in a Jupyter Notebook on your computer. Please revisit our Jupyter Notebook and Anaconda tutorials earlier in the Nanodegree program for installation instructions.
-The following packages (libraries) need to be installed. You can install these packages via conda or pip. Please revisit our Anaconda tutorial earlier in the Nanodegree program for package installation instructions.
-- pandas
-- NumPy
-- requests
-- tweepy
-- json
-
-
-### The Data
-In this project, you will work on the following three datasets.
+There are three different types of data for this project, each with different data format.
 
 1. Enhanced Twitter Archive
 
-The WeRateDogs Twitter archive contains basic tweet data for all 5000+ of their tweets, but not everything. One column the archive does contain though: each tweet's text, which I used to extract rating, dog name, and dog "stage" (i.e. doggo, floofer, pupper, and puppo) to make this Twitter archive "enhanced." Of the 5000+ tweets, I have filtered for tweets with ratings only (there are 2356).
-I extracted this data programmatically, but I didn't do a very good job. The ratings probably aren't all correct. Same goes for the dog names and probably dog stages (see below for more information on these) too. You'll need to assess and clean these columns if you want to use them for analysis and visualization
+The WeRateDogs Twitter archive contains basic tweet data for all 5000+ of their tweets, but not everything. 
 
 2. Additional Data via the Twitter API
 
-Back to the basic-ness of Twitter archives: retweet count and favorite count are two of the notable column omissions. Fortunately, this additional data can be gathered by anyone from Twitter's API. Well, "anyone" who has access to data for the 3000 most recent tweets, at least. But you, because you have the WeRateDogs Twitter archive and specifically the tweet IDs within it, can gather this data for all 5000+. And guess what? You're going to query Twitter's API to gather this valuable data.
+The additional data to be gathered and contains retweet count and favorite count, which are the two of the notable column missing from the twitter archive data. The data is queried using tweepy, which ias a Twitter's API to gather this valuable data.
 
 3. Image Predictions File
 
-One more cool thing: I ran every image in the WeRateDogs Twitter archive through a neural network that can classify breeds of dogs. The results: a table full of image predictions (the top three only) alongside each tweet ID, image URL, and the image number that corresponded to the most confident prediction (numbered 1 to 4 since tweets can have up to four images).
+The file contains tweet ID, image URL, and the image number that corresponded to the most confident prediction (numbered 1 to 4 since tweets can have up to four images)
 
 ## Step 1: Gathering Data
 
