@@ -84,6 +84,11 @@ Using twitter_archive_master.csv file, three insights were analyzed and visualiz
 
 3. Golden Retriever is the most popular dog breed amongst WeRateDogs’s tweets in terms of the number of image predictions having 139 dogs. The second most popular dog breed is Labrador Retriever also having 95 dogs. Therefore, golden retriever, labrador retriever, pembroke, Chihuahua and pug make top 5 most popular dog breeds
 
+![image](https://user-images.githubusercontent.com/7541585/193414221-2288a8ea-1699-450c-9eef-2f4cc3a1f938.png)
+![image](https://user-images.githubusercontent.com/7541585/193414407-75f2fdbc-5b6a-4663-ab90-a486fa71295d.png)
+![image](https://user-images.githubusercontent.com/7541585/193414417-47008729-250a-47a8-a64a-b5cbd9fe52f5.png)
+![image](https://user-images.githubusercontent.com/7541585/193414443-47c61010-8556-4312-97c4-187f32455b88.png)
+
 ## Limitations
 
 The project identified only three insights. First, the most popular dog stage in terms of retweets and favorite counts. The most popular dog breed as well as their distributions.
