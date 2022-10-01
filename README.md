@@ -1,18 +1,15 @@
+## Project Motivation
+
+The object of this project is to wrangle WeRateDogs Twitter data to create interesting and trustworthy analyses and visualizations. The Twitter archive only contains very basic tweet information, and additional gathering, then assessing and cleaning is required for a worthy analyses and visualizations.
+
 ## Project Steps Overview
 
-Step 1: Gathering data
-
-Step 2: Assessing data
-
-Step 3: Cleaning data
-
-Step 4: Storing data
-
-Step 5: Analyzing, and visualizing data
-
-Step 6: Reporting
-- data wrangling efforts
-- data analyses and visualizations
+- Step 1: Gathering data
+- Step 2: Assessing data
+- Step 3: Cleaning data
+- Step 4: Storing data
+- Step 5: Analyzing, and visualizing data
+- Step 6: Reporting
 
 ## What Software Do I Need?
 
@@ -28,10 +25,6 @@ The following packages (libraries) need to be installed. You can install these p
 - tweepy
 - json
 
-## Project Motivation
-
-### Context
-Your goal: wrangle WeRateDogs Twitter data to create interesting and trustworthy analyses and visualizations. The Twitter archive is great, but it only contains very basic tweet information. Additional gathering, then assessing and cleaning is required for "Wow!"-worthy analyses and visualizations.
 
 ### The Data
 In this project, you will work on the following three datasets.
