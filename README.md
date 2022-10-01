@@ -63,3 +63,41 @@ Both visual and progmmatic methods were used to assess quality and tidiness issu
 Through **visual Assessment**, where the data sets were first converted to csv and then opened in an excel workbook, I was able to quickly identify issues as non-descriptive column headers, extraneous columns, missing values (NaN, none), inconsistent rating denominator as well as tidiness issues for dog stage (doggo, floofer, pupper,puppo) in the three Datasets.
 
 In **programmatic Assessment**, I loaded the data sets into pandas data frame in Jupyter notebook and I identified most of the quality issues including incorrect data types, invalid names under name column (a, an, none) and duplicate values existing in the three datasets. The python methods used comprise .info(), .head(), .describe(), .dtypes, .nunique(), .value_counts() and .columns among others. For instance, inaccurate values in twitter_archive data for name column was one of the quality issues identified while the four columns for doggo, floofer, pupper, and puppo were considered dog stage, one variable as a tidiness issue.
+
+## Cleaning the Data
+
+The aim here is to improve quality and tidiness of the data based on the assessment made. In cleaning the data, I used pogrammatic data cleaning process, in which every issue identified in the assessment section is first defined followed by coding and and finally testing. However, copies of the original dataset were made before the issues were cleaned. The three data sets had a lot of unique issues, and at times I had to split the data and clean a particular quality issue and then merge them again. Writing a regex pattern helped in indentifying the correct dog_name and dog_stage.
+
+## Storing the Data
+
+After cleaning the data, the merged data was stored as twitter_archive_master.csv file into the working directory
+
+## Analyzing the Data
+
+Using twitter_archive_master.csv file, three insights were analyzed and visualizations made for each case. One of the insights is that Golden Retriever is the most popular dog breed amongst WeRateDogs’s tweets in terms of the number of image predictions having 139 dogs.
+
+## Insights
+
+1. Pupper dog stage is the most popular dog stage amongst WeRateDogs’s tweets, favorite and retweets counts. The second, most popular dog stage based on the retweets and favorite counts is doggo.
+
+2. There is strong linear relationship between the Favourites count and the Retweet, though most of the data is accumulated at the start. This relationship is the same in every dog stage. Also, the distribution for p1, p2 and p3 is really skewed
+
+3. Golden Retriever is the most popular dog breed amongst WeRateDogs’s tweets in terms of the number of image predictions having 139 dogs. The second most popular dog breed is Labrador Retriever also having 95 dogs. Therefore, golden retriever, labrador retriever, pembroke, Chihuahua and pug make top 5 most popular dog breeds
+
+## Limitations
+
+The project identified only three insights. First, the most popular dog stage in terms of retweets and favorite counts. The most popular dog breed as well as their distributions.
+
+It would be of interest to consider the correlation between the tweets and the ratings, which would involve further transformation of data. Another limitation is that, the data had a lot of missing values but I only consider situations where there is valid image url
+
+During cleaning process, there were several invalid dog names, and even after creating regex pattern to extract the correct dog names, there is likelihood that some names still remain unextracted from the text column. This still require further investigation so as extract and correct all the names
+
+## Conclusion
+
+This project was majorly dealing with data wrangling process. There were three different types of data from different sources and formats. First, we have WeRateDogs twitter archive data in a csv format, second is Tweet image prediction in .tsv format and the last dataset is WeRateDogs twitter account additional data tweet to be stored as tweet_json.txt file
+
+All the wrangling efforts are documented at every section.
+
+The major findings of this analysis are that Pupper dog stage is the most popular dog stage amongst WeRateDogs’s tweets, favorite and retweets counts. The second, most popular dog stage based on the retweets and favorite counts is doggo. Whereas I was able to show that there is a correlation between the Favourites count and the Retweet, I have to indicate that most of the data accumulated at the start of the graph, which might skewness.
+
+lastly, Golden Retriever is the most popular dog breed amongst WeRateDogs’s tweets in terms of the number of image predictions having 139 dogs. Others making top five include labrador retriever, pembroke, Chihuahua and pug.
