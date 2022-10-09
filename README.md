@@ -24,9 +24,9 @@ The object of this project is to wrangle WeRateDogs Twitter data to create inter
 1. Gathering data
 2. Assessing data
 3. Cleaning data
-- Step 4: Storing data
-- Step 5: Analyzing, and visualizing data
-- Step 6: Reporting
+4. Storing data
+5. Analyzing, and visualizing data
+6. Reporting
 
 ## The Data
 
