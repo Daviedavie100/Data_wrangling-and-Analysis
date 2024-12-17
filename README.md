@@ -89,6 +89,7 @@ Using twitter_archive_master.csv file, three insights were analyzed and visualiz
 ![image](https://user-images.githubusercontent.com/7541585/193414417-47008729-250a-47a8-a64a-b5cbd9fe52f5.png)
 ![image](https://user-images.githubusercontent.com/7541585/193414443-47c61010-8556-4312-97c4-187f32455b88.png)
 ![image](image.png)
+![dis_image](python.jpg)
 
 ## Limitations
 
